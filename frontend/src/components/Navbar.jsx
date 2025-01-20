@@ -50,7 +50,9 @@ const Navbar = () => {
                   <p 
                     onClick={() => navigate('my-appointments')}
                     className='hover:text-primary-lg cursor-pointer uppercase'>My Appointments</p>
-                  <p className='hover:text-primary-lg cursor-pointer uppercase'>Logout</p>
+                  <p 
+                    onClick={() => setToken(false)}
+                    className='hover:text-primary-lg cursor-pointer uppercase'>Logout</p>
                 </div>
               </div>
             </div> 
