@@ -1,9 +1,12 @@
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+
 const App = () => {
   return (
-    <div className='bg-[#111] p-5'>
-      <h1 className='logo text-[#eee] text-4xl'>Asclepeion</h1>
-      <h2 className='heading text-[#2874c6] text-2xl'>Medical Healthcare Services</h2>
-      <p className='text-[#eee]'>24 Hour Support</p>
+    <div className='mx-4 sm:mx-[10%]'>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
     </div>
   )
 }
