@@ -24,3 +24,6 @@ body {
   font-size: 2rem;
 }
 
+.active hr {
+  @apply block
+}
