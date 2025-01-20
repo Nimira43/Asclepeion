@@ -9,7 +9,7 @@ const Navbar = () => {
   const [token, setToken] = useState(true)
 
   return (
-    <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-secondary'>  
+    <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-grey-xl'>  
       <h1 className='logo cursor-pointer text-primary'>Asclepeion</h1>
       <ul className='hidden md:flex items-start gap-5 font-medium'>
         <NavLink to='/'>
@@ -42,11 +42,15 @@ const Navbar = () => {
                 src={assets.dropdown_icon} 
                 alt='dropdown icon' 
               />
-              <div className= 'absolute top-0 right-0 pt-14 text-base font-semibold text-dark z-20 hidden group-hover:block'>
-                <div className='min-w-48 bg-grey-xl rounded flex flex-col gap-4 p-4'>
-                  <p>My Profile</p>
-                  <p>My Appointments</p>
-                  <p>Logout</p>
+              <div className='absolute top-0 right-0 pt-14 text-sm font-bold text-dark z-20 hidden group-hover:block'>
+                <div className='min-w-48 bg-light rounded flex flex-col gap-4 p-4'>
+                  <p
+                    onClick={() => navigate('my-profile')} 
+                    className='hover:text-primary cursor-pointer uppercase'>My Profile</p>
+                  <p 
+                    onClick={() => navigate('my-appointments')}
+                    className='hover:text-primary-lg cursor-pointer uppercase'>My Appointments</p>
+                  <p className='hover:text-primary-lg cursor-pointer uppercase'>Logout</p>
                 </div>
               </div>
             </div> 
