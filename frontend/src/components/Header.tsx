@@ -8,7 +8,7 @@ const Header = () => {
       <p className='text-5xl lg:text-4xl md:text-3xl text-primary font-bold leading-tight lg:leading-tight md:leading-tight'>We prioritise your health.</p>
       <p className='text-5xl lg:text-4xl md:text-3xl text-primary font-bold leading-tight lg:leading-tight md:leading-tight'>With compassion and expertise.</p>
       <p className='text-base md:text-sm lg:text-[20px] text-dark font-medium leading-normal md:leading-relaxed lg:leading-loose'>Our dedicated team of professionals is here to provide personalised care, ensuring your well-being and peace of mind.</p>
-      <a href="#" className='uppercase font-semibold bg-primary text-light px-3 py-2 rounded-md hover:bg-primary-lg transition duration-500' >
+      <a href="#speciality" className='uppercase font-semibold bg-primary text-light px-3 py-2 rounded-md hover:bg-primary-lg transition duration-500' >
         Book Appointment
       </a>
       </div>
