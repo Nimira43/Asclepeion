@@ -1,6 +1,8 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
+  const navigate = useNavigate()
+
   return (
     <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-secondary'>  
       <h1 className='logo cursor-pointer text-primary'>Asclepeion</h1>
@@ -22,8 +24,13 @@ const Navbar = () => {
           <hr className='border-none outline-none h-[1px] bg-primary w-3/5 m-auto hidden' />
         </NavLink>
       </ul>
-      <div>
-        <button className='uppercase font-semibold bg-primary text-light px-3 py-2 rounded-md hover:bg-primary-lg'>Register Today</button>
+      <div className='flex items-center gap-4'>
+        <button
+          onClick={() => navigate('/login')} 
+          className='uppercase font-semibold bg-primary text-light px-3 py-2 rounded-md hover:bg-primary-lg hidden md:block' 
+        >
+          Register Today
+        </button>
       </div>
     </div>
   )
