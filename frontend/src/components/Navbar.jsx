@@ -8,7 +8,7 @@ const Navbar = () => {
   const [token, setToken] = useState(true)
 
   return (
-    <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-grey-xl'>  
+    <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-secondary'>  
       <h1 className='logo cursor-pointer text-primary'>
         {/* <NavLink to='/'>Asclepeion</NavLink> */}
         Asclepeion
@@ -45,7 +45,7 @@ const Navbar = () => {
                 alt='dropdown icon' 
               />
               <div className='absolute top-0 right-0 pt-14 text-sm font-bold text-dark z-20 hidden group-hover:block'>
-                <div className='min-w-48 bg-grey-xl rounded flex flex-col gap-4 p-4 border-[1px] '>
+                <div className='min-w-48 bg-lighter-blue rounded flex flex-col gap-4 p-4'>
                   <p
                     onClick={() => navigate('my-profile')} 
                     className='hover:text-primary cursor-pointer uppercase'>My Profile</p>

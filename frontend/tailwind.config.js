@@ -16,7 +16,8 @@ export default {
         'grey-md': '#888',
         'grey-lg': '#ccc',
         'grey-xl': '#eee',
-        'light': '#efffef'
+        'lighter-green': '#efffef',
+        'lighter-blue': '#edf7ff'
       }
     },
   },
