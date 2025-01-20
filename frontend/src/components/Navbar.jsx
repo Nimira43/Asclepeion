@@ -2,8 +2,8 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div>
-      <h1 className='logo'>Asclepeion</h1>
+    <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-[#1880f0]'>
+      <h1 className='logo cursor-pointer'>Asclepeion</h1>
       <ul>
         <NavLink>
           <li>Home</li>
@@ -22,6 +22,9 @@ const Navbar = () => {
           <hr />
         </NavLink>
       </ul>
+      <div>
+        <button>Register Today</button>
+      </div>
     </div>
   )
 }
