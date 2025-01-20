@@ -1,5 +1,6 @@
 import appointment_img from './appointment_img.png'
 import header_img from './header_img.png'
+import header2 from './header2.png'
 import group_profiles from './group_profiles.png'
 import profile from './profile.png'
 import contact_image from './contact_image.png'
@@ -40,6 +41,7 @@ import Pediatricians from './Pediatricians.svg'
 export const assets = {
   appointment_img,
   header_img,
+  header2,
   group_profiles,
   logo,
   chats_icon,

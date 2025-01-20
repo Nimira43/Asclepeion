@@ -1,16 +1,18 @@
 import { useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
-// import '../assets/assets'
 import { assets } from '../assets/assets'
 
 const Navbar = () => {
   const navigate = useNavigate()
-  const [showMenu, setShowMenu] = useState(false)
+  // const [showMenu, setShowMenu] = useState(false)
   const [token, setToken] = useState(true)
 
   return (
     <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-grey-xl'>  
-      <h1 className='logo cursor-pointer text-primary'>Asclepeion</h1>
+      <h1 className='logo cursor-pointer text-primary'>
+        {/* <NavLink to='/'>Asclepeion</NavLink> */}
+        Asclepeion
+      </h1>
       <ul className='hidden md:flex items-start gap-5 font-medium'>
         <NavLink to='/'>
           <li className='py-1 uppercase font-semibold text-dark hover:text-primary-lg'>Home</li>
