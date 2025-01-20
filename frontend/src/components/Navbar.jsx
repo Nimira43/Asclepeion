@@ -60,7 +60,7 @@ const Navbar = () => {
             </div> 
           : <button
               onClick={() => navigate('/login')} 
-              className='uppercase font-semibold bg-primary text-light px-3 py-2 rounded-md hover:bg-primary-lg hidden md:block' 
+              className='uppercase font-semibold bg-primary text-light px-3 py-2 rounded-md hover:bg-primary-lg hidden md:block transition duration-500' 
             >
               Register Today
             </button>
