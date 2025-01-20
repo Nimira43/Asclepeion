@@ -45,7 +45,7 @@ const Navbar = () => {
                 alt='dropdown icon' 
               />
               <div className='absolute top-0 right-0 pt-14 text-sm font-bold text-dark z-20 hidden group-hover:block'>
-                <div className='min-w-48 bg-light rounded flex flex-col gap-4 p-4'>
+                <div className='min-w-48 bg-grey-xl rounded flex flex-col gap-4 p-4 border-[1px] '>
                   <p
                     onClick={() => navigate('my-profile')} 
                     className='hover:text-primary cursor-pointer uppercase'>My Profile</p>
