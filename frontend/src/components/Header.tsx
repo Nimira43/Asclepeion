@@ -10,12 +10,12 @@ const Header = () => {
         className='md:w-1/2 flex flex-col items-start justify-center gap-4 py-10 m-auto md:py-[10vw] md:mb-[-30px]'
       >
         <p 
-          className='text-5xl lg:text-4xl md:text-3xl text-primary font-bold leading-tight lg:leading-tight md:leading-tight'
+          className='text-5xl md:3xl sm:2xl text-primary font-bold leading-tight lg:leading-tight md:leading-tight'
         >
           We prioritise your health.
         </p>
         <p 
-          className='text-5xl lg:text-4xl md:text-3xl text-primary font-bold leading-tight lg:leading-tight md:leading-tight'
+          className='text-5xl md:3xl sm:2xl text-primary font-bold leading-tight lg:leading-tight md:leading-tight'
         >
           With compassion and expertise.
         </p>
