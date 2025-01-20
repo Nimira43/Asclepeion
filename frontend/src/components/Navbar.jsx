@@ -44,6 +44,13 @@ const Navbar = () => {
                 src={assets.dropdown_icon} 
                 alt='dropdown icon' 
               />
+              <div>
+                <div>
+                  <p>My Profile</p>
+                  <p>My Appointments</p>
+                  <p>Logout</p>
+                </div>
+              </div>
             </div> 
           : <button
               onClick={() => navigate('/login')} 
