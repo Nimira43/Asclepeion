@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
+// import '../assets/assets'
+import { assets } from '../assets/assets'
 
 const Navbar = () => {
   const navigate = useNavigate()
@@ -28,12 +30,28 @@ const Navbar = () => {
         </NavLink>
       </ul>
       <div className='flex items-center gap-4'>
-        <button
-          onClick={() => navigate('/login')} 
-          className='uppercase font-semibold bg-primary text-light px-3 py-2 rounded-md hover:bg-primary-lg hidden md:block' 
-        >
-          Register Today
-        </button>
+        { token 
+          ? <div
+              className='flex items-center gap-2 cursor-pointer group relative'
+            >
+              <img
+                className='w-8 rounded-full' 
+                src={assets.profile} 
+                alt='user' 
+              />
+              <img 
+                className='w-2.5'
+                src={assets.dropdown_icon} 
+                alt='dropdown icon' 
+              />
+            </div> 
+          : <button
+              onClick={() => navigate('/login')} 
+              className='uppercase font-semibold bg-primary text-light px-3 py-2 rounded-md hover:bg-primary-lg hidden md:block' 
+            >
+              Register Today
+            </button>
+        } 
       </div>
     </div>
   )
